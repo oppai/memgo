@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    image: golang:1.17
+    image: golang:1.27.3
     ports:
       - "1323:1323"
     volumes:
@@ -10,7 +10,7 @@ services:
     working_dir: /app
     command: ["go", "run", "server.go"]
   test:
-    image: golang:1.17
+    image: golang:1.27.3
     volumes:
       - ./tmp/go:/go
       - ./:/app
