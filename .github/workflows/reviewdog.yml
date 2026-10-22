@@ -14,4 +14,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           level: warning
           golangci_lint_flags: "--config=.github/.golangci.yml"
-          go_version: '1.17'
+          go_version: '1.27.3'
